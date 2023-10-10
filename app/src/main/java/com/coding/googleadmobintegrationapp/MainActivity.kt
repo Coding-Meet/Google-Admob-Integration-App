@@ -1,7 +1,9 @@
 package com.coding.googleadmobintegrationapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.FrameLayout
 import com.google.android.gms.ads.AdSize
 
@@ -20,5 +22,23 @@ class MainActivity : AppCompatActivity() {
 
 //        AdSize.FULL_BANNER
 //        loadBannerAds(this,adsFrameLayout, AdSize.FULL_BANNER,R.string.banner_ads1)
+
+
+
+
+        val showInterstitialAdsBtn = findViewById<Button>(R.id.showInterstitialAdsBtn)
+
+        val myInterstitialAds = MyInterstitialAds(this)
+        myInterstitialAds.loadInterstitialAds(R.string.interstitial_ads1)
+
+        showInterstitialAdsBtn.setOnClickListener {
+            myInterstitialAds.showInterstitialAds {
+
+                // here interstitial finish or dismiss or not load after execute
+                val afterIntent = Intent(this,AfterInterstitalFinishedActivity::class.java)
+                startActivity(afterIntent)
+
+            }
+        }
     }
 }
