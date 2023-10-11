@@ -40,5 +40,16 @@ class MainActivity : AppCompatActivity() {
 
             }
         }
+
+
+
+
+        val showSmallMediumNativeAdsBtn = findViewById<Button>(R.id.showSmallMediumNativeAdsBtn)
+        showSmallMediumNativeAdsBtn.setOnClickListener {
+
+            val smallMediumIntent = Intent(this,SmallMediumNativeAdsActivity::class.java)
+            startActivity(smallMediumIntent)
+        }
+
     }
 }
