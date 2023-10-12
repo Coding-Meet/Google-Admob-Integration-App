@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.FrameLayout
+import android.widget.TextView
 import com.google.android.gms.ads.AdSize
 
 class MainActivity : AppCompatActivity() {
@@ -51,5 +52,27 @@ class MainActivity : AppCompatActivity() {
             startActivity(smallMediumIntent)
         }
 
+
+
+        val sharedPreferenceManger = SharedPreferenceManger(this)
+        getRewardedCoin(sharedPreferenceManger.totalRewardedAmount)
+
+        val rewardedAdsBtn = findViewById<Button>(R.id.rewardedAdsBtn)
+        val myRewardedAds = MyRewardedAds(this)
+        myRewardedAds.loadRewardedAds(R.string.rewarded_ads1)
+
+        rewardedAdsBtn.setOnClickListener {
+            myRewardedAds.showRewardedAds(R.string.rewarded_ads1){
+                val rewardedCoin = it.amount
+                sharedPreferenceManger.totalRewardedAmount += rewardedCoin
+                getRewardedCoin(sharedPreferenceManger.totalRewardedAmount)
+            }
+        }
+
+    }
+
+    private fun getRewardedCoin(totalRewardedAmount: Int){
+        val totalRATxt = findViewById<TextView>(R.id.totalRATxt)
+        totalRATxt.text = "Total Rewarded Coins: $totalRewardedAmount Coins"
     }
 }

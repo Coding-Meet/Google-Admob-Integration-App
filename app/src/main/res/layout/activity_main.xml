@@ -22,6 +22,22 @@
         android:layout_below="@id/showInterstitialAdsBtn"
         android:text="Show Small Medium Size Native Ads"/>
 
+    <Button
+        android:id="@+id/rewardedAdsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showSmallMediumNativeAdsBtn"
+        android:text="Rewarded Ads"/>
+
+    <TextView
+        android:id="@+id/totalRATxt"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/rewardedAdsBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Rewarded Amount"/>
 
     <FrameLayout
         android:id="@+id/adsFrameLayout"
