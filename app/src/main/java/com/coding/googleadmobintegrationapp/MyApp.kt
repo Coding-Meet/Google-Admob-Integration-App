@@ -6,6 +6,11 @@ import com.google.android.gms.ads.MobileAds
 class MyApp : Application(){
     override fun onCreate() {
         super.onCreate()
-        MobileAds.initialize(this) {}
+        try {
+            MobileAds.initialize(this) {}
+            AppOpenManager(this)
+        }catch (e:Exception){
+            e.printStackTrace()
+        }
     }
 }
