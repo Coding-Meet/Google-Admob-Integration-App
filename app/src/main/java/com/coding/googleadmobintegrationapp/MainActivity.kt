@@ -69,6 +69,18 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
+        val rewardedInterstitialAdsBtn = findViewById<Button>(R.id.rewardedInterstitialAdsBtn)
+
+        val rewardInterstitialAds = MyRewardInterstitialAds(this)
+        rewardInterstitialAds.loadRewardInterstitialAds(R.string.rewardInterstitialAds)
+
+        rewardedInterstitialAdsBtn.setOnClickListener {
+            rewardInterstitialAds.showRewardedInterstitialAds(R.string.rewardInterstitialAds) {
+                val rewardedCoin = it.amount
+                sharedPreferenceManger.totalRewardedAmount += rewardedCoin
+                getRewardedCoin(sharedPreferenceManger.totalRewardedAmount)
+            }
+        }
     }
 
     private fun getRewardedCoin(totalRewardedAmount: Int){

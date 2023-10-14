@@ -29,10 +29,18 @@
         android:layout_below="@id/showSmallMediumNativeAdsBtn"
         android:text="Rewarded Ads"/>
 
+    <Button
+        android:id="@+id/rewardedInterstitialAdsBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rewardedAdsBtn"
+        android:text="Rewarded Interstitial Ads"/>
+
+
     <TextView
         android:id="@+id/totalRATxt"
         android:layout_marginTop="8dp"
-        android:layout_below="@id/rewardedAdsBtn"
+        android:layout_below="@id/rewardedInterstitialAdsBtn"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
