@@ -18,6 +18,9 @@
         android:theme="@style/Theme.GoogleAdmobIntegrationApp"
         tools:targetApi="31">
         <activity
+            android:name=".ShowAdsRVActivity"
+            android:exported="false" />
+        <activity
             android:name=".SmallMediumNativeAdsActivity"
             android:exported="false" />
         <activity
@@ -31,8 +34,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <!-- Here value change your google admob value -->
+        </activity> <!-- Here value change your google admob value -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3940256099942544~3347511713" />

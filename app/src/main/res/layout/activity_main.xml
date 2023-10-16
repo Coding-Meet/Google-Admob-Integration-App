@@ -21,12 +21,17 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/showInterstitialAdsBtn"
         android:text="Show Small Medium Size Native Ads"/>
-
+    <Button
+        android:id="@+id/showAdsRVBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showSmallMediumNativeAdsBtn"
+        android:text="Show Ads in Recycler View"/>
     <Button
         android:id="@+id/rewardedAdsBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/showSmallMediumNativeAdsBtn"
+        android:layout_below="@id/showAdsRVBtn"
         android:text="Rewarded Ads"/>
 
     <Button

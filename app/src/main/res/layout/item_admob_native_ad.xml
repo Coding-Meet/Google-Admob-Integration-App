@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/native_ad_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.coding.googleadmobintegrationapp.mynative.TemplateView
+        android:id="@+id/my_templatesmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gnt_template_type="@layout/gnt_small_template_view" />
+
+    <com.coding.googleadmobintegrationapp.mynative.TemplateView
+        android:id="@+id/my_templatemedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gnt_template_type="@layout/gnt_medium_template_view" />
+
+
+    <com.coding.googleadmobintegrationapp.mynative.TemplateView
+        android:id="@+id/my_templatecustom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:gnt_template_type="@layout/gnt_custom_small_template_view" />
+
+</LinearLayout>

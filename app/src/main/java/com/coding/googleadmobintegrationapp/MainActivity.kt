@@ -81,6 +81,14 @@ class MainActivity : AppCompatActivity() {
                 getRewardedCoin(sharedPreferenceManger.totalRewardedAmount)
             }
         }
+
+
+
+        val showAdsRVBtn = findViewById<Button>(R.id.showAdsRVBtn)
+        showAdsRVBtn.setOnClickListener {
+            val showAdsRecyclerIntent = Intent(this,ShowAdsRVActivity::class.java)
+            startActivity(showAdsRecyclerIntent)
+        }
     }
 
     private fun getRewardedCoin(totalRewardedAmount: Int){
