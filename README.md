@@ -16,11 +16,14 @@ Welcome to our comprehensive series of tutorials on monetizing your Android app 
 - [**How to Implement Rewarded Ads in Android Studio with Kotlin**](https://youtu.be/-vWtsyfrHwI?si=h5-z8ODn_oCNsZVL)
   - Motivate and retain users by offering rewards through rewarded ads.
 
-- [**How to Implement Rewarded Interstitial Ads in Android Studio with Kotlin**]()
+- [**How to Implement Rewarded Interstitial Ads in Android Studio with Kotlin**](https://youtu.be/IOjQNcWZRGg?si=8CkOX9r0Do6QoqUy)
   - Reward your users while maximizing app revenue with rewarded interstitial ads.
 
 - [**How to Implement App Open Ads in Android Studio with Kotlin**](https://youtu.be/IxfE8lm3fMA?si=M-gXwbOBpp_mmDQz)
   - Elevate your app's loading screen with monetization opportunities.
+ 
+- [**How to Integrate Native Ads Inside Recycler View in Android Studio Kotlin**](https://youtu.be/QHcDGgBVoeU?si=Wx9RwTh_YUdsSj-f)
+  - Enhance user experience by integrating native ads in a RecyclerView.
 
 Stay tuned for each tutorial in the series, and don't forget to like, subscribe, and hit the notification bell to stay updated with our latest content! 💰📱
 
