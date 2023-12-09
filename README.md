@@ -35,3 +35,13 @@ Welcome to our comprehensive series of tutorials on monetizing your Android app 
 
 Stay tuned for each tutorial in the series, and don't forget to like, subscribe, and hit the notification bell to stay updated with our latest content! 💰📱
 
+
+## Support the Project
+
+If you find this tutorial series helpful and would like to support the development of more content, consider buying me a coffee! Your support helps in creating high-quality tutorials.
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Buy%20Me%20a%20Coffee-Donate-orange?style=for-the-badge&logo=buy-me-a-coffee)](https://www.buymeacoffee.com/codingmeet)
+
+Your generosity is greatly appreciated! Thank you for supporting this project.
+
+
